@@ -1,0 +1,39 @@
+git config
+
+git config --global user.name "Nome-de-usuário"
+git config --global user.email "email-do-github"
+git config --global init.defaultBranch main
+git config --global credential.helper store
+git clone "URL-do-Branch" nome-q-quer-para-a-pasta-local
+git init
+git remote add origin "URL-do-Branch"
+git status
+git add
+git commit -m"descrição do repositório subido"
+git log
+echo "repositório não desejado" > .gitignore
+echo > .gitignore
+touch "repositório vazio desejado"/.gitkeep
+git restore
+git commit --amend (-m"nova mensagem")
+git reset
+	--soft
+	--mixed
+	--hard (chave do commit que deseja voltar)
+git reflog
+git reset "nome-do-arquivo"
+git restore --staged "nome-do-arquivo"
+git push -u origin main
+git pull
+git checkout -b "nome-da-nova-branch"
+git checkout main
+git branch -v
+git merge "nome-da-branch-a-ser-mesclada"
+git branch -d "nome da branch a ser deletada"
+git pull --> git fetch + git merge
+git diff "main" "origin/main"
+git clone "URL-do-Branch" --branch "nome-da-branch-escolhida" --single-branch
+git stash (arquiva alterações feitas e retorna a branch ao status anterior)
+	list
+	pop
+	apply
